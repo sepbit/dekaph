@@ -7,17 +7,17 @@ function dekatrianGregorian($date){
 
   if ( date("L", mktime(0, 0, 0, 1, 1, $date[0])) ){
     if($date[1] == 0 && $date[2] == 0){
-      $numberDay = 0;
+      $numberDay = 1;
 
     }elseif($date[1] == 0 && $date[2] == 1){
-      $numberDay = 1;
+      $numberDay = 2;
 
     }elseif($date[1] >= 1){
       $numberDay = ($date[1]*28-28)+$date[2]+1;
     }
   }else{
     if($date[1] == 0 && $date[2] == 0){
-      $numberDay = 0;
+      $numberDay = 1;
 
     }else{
       $numberDay = ($date[1]*28-28)+$date[2];
