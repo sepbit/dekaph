@@ -13,10 +13,10 @@ function gregorianDekatrian($date){
   if ( date("L", mktime(0, 0, 0, 1, 1, $date[0])) ){
     if($numberDay == 0){
       $month = 0;
-      $day = 0;
+      $day = 1;
     }elseif($numberDay == 1){
       $month = 0;
-      $day = 1;
+      $day = 2;
     }else{
       $day -=1;
     }
@@ -28,7 +28,7 @@ function gregorianDekatrian($date){
   }else{
     if($numberDay == 0){
       $month = 0;
-      $day = 0;
+      $day = 1;
     }
     if($day == 0 && $numberDay > 0){
       $month -=1;
