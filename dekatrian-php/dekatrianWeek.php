@@ -31,4 +31,4 @@ function dekatrianWeek($date){
 }
 ?>
 
-1 (para Segunda) até 7 (para Domingo);
+//1 (para Segunda) até 7 (para Domingo);

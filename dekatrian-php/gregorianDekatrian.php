@@ -1,5 +1,5 @@
 <?php
-$date = "2016-09-22";
+$date = "2017-09-22";
 echo "gregoriano: ". $date .", dekatrian: ". gregorianDekatrian($date);
 
 function gregorianDekatrian($date){
