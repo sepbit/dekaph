@@ -1,5 +1,5 @@
 <?php
-$date = "2017-09-22";
+$date = "2017-11-04";
 echo "gregoriano: ". $date .", dekatrian: ". gregorianDekatrian($date);
 
 function gregorianDekatrian($date){
@@ -14,23 +14,29 @@ function gregorianDekatrian($date){
     if($numberDay == 0){
       $month = 0;
       $day = 1;
+
     }elseif($numberDay == 1){
       $month = 0;
       $day = 2;
-    }else{
-      $day -=1;
-    }
-    if($day == 0 && $numberDay > 0){
+
+    }elseif($day == 0){
+      $month -=1;
+      $day = 27;
+
+    }elseif($day == 1){
       $month -=1;
       $day = 28;
+
+    }else{
+      $day -=1;
     }
 
   }else{
     if($numberDay == 0){
       $month = 0;
       $day = 1;
-    }
-    if($day == 0 && $numberDay > 0){
+      
+    }elseif($day == 0){
       $month -=1;
       $day = 28;
     }

@@ -1,4 +1,4 @@
-var date = "2017-1-1";
+var date = "2017-11-27";
 date = dekatrianGregorian(date);
 console.log(date);
 

@@ -1,5 +1,5 @@
 <?php
-$date = "2017-1-1";
+$date = "2017-11-27";
 echo "dekatrian: ". $date .", gregoriano: ". dekatrianGregorian($date);
 
 function dekatrianGregorian($date){
@@ -15,6 +15,7 @@ function dekatrianGregorian($date){
     }elseif($date[1] >= 1){
       $numberDay = ($date[1]*28-28)+$date[2]+1;
     }
+    
   }else{
     if($date[1] == 0 && $date[2] == 1){
       $numberDay = 0;
