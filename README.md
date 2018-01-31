@@ -49,22 +49,22 @@ Check date is valid.
 
 ``` php
 <?=$dekaph->checkDekatrian(2018, 13, 28)?>
-//Return true
 ```
+Return boolean, true.
 
 Convert from dekatrian to gregorian.
 
 ``` php
 <?=$dekaph->dekatoGreg(2018, 13, 28)?>
-//Return 2018-12-31
 ```
+Return string, 2018-12-31.
 
 Convert from gregorian to dekatrian.
 
 ``` php
 <?=$dekaph->gregToDeka(2018, 12, 31)?>
-//Return 2018-13-28
 ```
+Return string, 2018-13-28.
 
 ## Change log
 
