@@ -20,8 +20,6 @@ use Vitorteccom\Dekaph\Dekatrian;
 /**
  * DekatrianTest class
  *
- * PHP Version 7.0
- *
  * @package   Vitorteccom\Dekaph\DekatrianTest
  * @author    Vitor Aloisio <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
