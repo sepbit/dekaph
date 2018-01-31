@@ -17,8 +17,6 @@ namespace Vitorteccom\Dekaph;
 /**
  * Dekatrian class
  *
- * PHP Version 7.0
- *
  * @package   Vitorteccom\Dekaph\Dekatrian
  * @author    Vitor Aloisio <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
