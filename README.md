@@ -19,7 +19,7 @@ This is the directory structure.
 ```
 build/
 docs/
-example/
+examples/
 src/
 tests/
 vendor/
