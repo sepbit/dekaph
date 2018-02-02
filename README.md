@@ -90,7 +90,7 @@ If you discover any security related issues, please email ``contato@vitortec.com
 
 ## Credits
 
-- [Vitor Aloisio Guia](https://github.com/vitoranguia)
+- [Vitor Guia](https://github.com/vitoranguia)
 - [All Contributors](../../contributors)
 
 ## License
