@@ -5,7 +5,7 @@
  * PHP Version 7.0
  *
  * @package   Vitorteccom\Dekaph
- * @author    Vitor Aloisio <vitor.guia@vitortec.com>
+ * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
  * @version   GIT: <git_id>
@@ -18,7 +18,7 @@ namespace Vitorteccom\Dekaph;
  * Dekatrian class
  *
  * @package   Vitorteccom\Dekaph\Dekatrian
- * @author    Vitor Aloisio <vitor.guia@vitortec.com>
+ * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
  * @see       https://devs.vitortec.com/dekaph Documentation of Dekatrian Calendar
