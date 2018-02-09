@@ -4,7 +4,7 @@ filter:
         - src/
     excluded_paths:
         - docs/
-        - example/
+        - examples/
         - tests/
 checks:
     php:
