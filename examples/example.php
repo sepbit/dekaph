@@ -5,23 +5,23 @@ use Vitorteccom\Dekaph\Dekatrian;
 $dekaph = new Dekatrian;
 
 $year = 2017;
-$mouth = 0;
+$month = 0;
 $day = 2;
 
-if ($dekaph->checkDekatrian($year, $mouth, $day)) {
+if ($dekaph->checkDekatrian($year, $month, $day)) {
     echo "Dekatrian date is valid<br />";
 } else {
     echo "Dekatrian date is invalid<br />";
 }
 
-echo "Dekatrian: $year-$mouth-$day<br />";
-echo 'Gregorian: '. $dekaph->dekatoGreg($year, $mouth, $day);
+echo "Dekatrian: $year-$month-$day<br />";
+echo 'Gregorian: '. $dekaph->dekatoGreg($year, $month, $day);
 
 echo "<br /><br />";
 
 $year = 2016;
-$mouth = 12;
+$month = 12;
 $day = 31;
 
-echo "Gregorian: $year-$mouth-$day<br />";
-echo 'Dekatrian: '. $dekaph->gregToDeka($year, $mouth, $day);
+echo "Gregorian: $year-$month-$day<br />";
+echo 'Dekatrian: '. $dekaph->gregToDeka($year, $month, $day);
