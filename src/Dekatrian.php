@@ -32,7 +32,7 @@ class Dekatrian
      * @param  integer $month Dekatrian month
      * @param  integer $day   Dekatrian day
      *
-     * @return boolean         Dekatrian date is valid or not
+     * @return boolean        Dekatrian date is valid or not
      */
     public function checkDekatrian($year, $month, $day)
     {
@@ -96,7 +96,7 @@ class Dekatrian
      * @param  integer $month Gregorian month
      * @param  integer $day   Gregorian day
      *
-     * @return string        Dekatrian date, e.g. 2018-13-28
+     * @return string         Dekatrian date, e.g. 2018-13-28
      */
     public function gregToDeka($year, $month, $day)
     {
