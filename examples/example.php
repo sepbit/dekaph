@@ -6,7 +6,7 @@ $dekaph = new Dekatrian;
 
 $year = 2017;
 $month = 0;
-$day = 2;
+$day = 1;
 
 if ($dekaph->checkDekatrian($year, $month, $day)) {
     echo "Dekatrian date is valid<br />";
