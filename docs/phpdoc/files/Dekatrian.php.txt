@@ -8,7 +8,6 @@
  * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPL-3.0-or-later
- * @version   GIT: <git_id>
  * @see       https://devs.vitortec.com/dekaph Documentation of Dekaph
  */
 
@@ -21,12 +20,10 @@ namespace Vitorteccom\Dekaph;
  * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPL-3.0-or-later
- * @version   GIT: <git_id>
  * @see       https://devs.vitortec.com/dekaph Documentation of Dekaph
  */
 class Dekatrian
 {
-
     /**
      * Check if a Dekatrian date is valid or not
      *
@@ -136,3 +133,4 @@ class Dekatrian
         return $year .'-'. $month .'-'. $day;
     }
 }
+
