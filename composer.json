@@ -1,44 +1,51 @@
 {
-    "name": "vitorteccom/dekaph",
-    "description": "This is a simple library to convert Dekatrian and Gregorian.",
-    "type": "library",
-    "keywords": ["converter", "date", "calendar", "dekatrian", "gregorian" , "vitorteccom"],
-    "homepage": "https://vitortec.com",
-    "license": "GPL-3.0-or-later",
-    "authors": [
-        {
-            "name": "Vitor Guia",
-            "email": "vitor.guia@vitortec.com",
-            "role": "Developer"
-        }
-    ],
-    "support": {
-        "email": "contato@vitortec.com",
-        "issues": "https://github.com/vitorteccom/dekaph/issues",
-        "wiki": "https://github.com/vitorteccom/dekaph/wiki",
-        "source": "https://github.com/vitorteccom/dekaph",
-        "docs": "https://devs.vitortec.com/dekaph"
-    },
-    "require": {
-        "php" : "^7.0"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "^3.2",
-        "phpunit/phpunit" : "^6.5"
-    },
-    "autoload": {
-        "psr-4": {
-          "Vitorteccom\\Dekaph\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Vitorteccom\\Dekaph\\": "tests/"
-        }
-    },
-    "scripts": {
-        "fix-style": "phpcbf -p --standard=psr2 src/ tests/",
-        "check-style": "phpcs -p --standard=psr2 src/ tests/",
-        "test": "phpunit"
+  "name": "vitorteccom/dekaph",
+  "description": "This is a simple library to convert Dekatrian and Gregorian.",
+  "type": "library",
+  "keywords": [
+    "converter",
+    "date",
+    "calendar",
+    "dekatrian",
+    "gregorian",
+    "vitorteccom"
+  ],
+  "homepage": "https://vitortec.com",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Vitor Guia",
+      "email": "vitor.guia@vitortec.com",
+      "role": "Developer"
     }
+  ],
+  "support": {
+    "email": "contato@vitortec.com",
+    "issues": "https://github.com/vitorteccom/dekaph/issues",
+    "wiki": "https://github.com/vitorteccom/dekaph/wiki",
+    "source": "https://github.com/vitorteccom/dekaph",
+    "docs": "https://devs.vitortec.com/dekaph"
+  },
+  "require": {
+    "php" : "^7.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.2",
+    "phpunit/phpunit" : "^6.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vitorteccom\\Dekaph\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vitorteccom\\Dekaph\\": "tests/"
+    }
+  },
+  "scripts": {
+    "fix-style": "phpcbf -p --standard=psr2 src/ tests/",
+    "check-style": "phpcs -p --standard=psr2 src/ tests/",
+    "test": "phpunit"
+  }
 }

@@ -30,43 +30,42 @@ vendor/
 
 Via Composer.
 
-``` bash
+```bash
 $ composer require vitorteccom/dekaph
 ```
 
 ## Usage
 This is minimal example.
 
-``` php
+```php
 <?php
 require __DIR__ .'/../vendor/autoload.php';
 
 use Vitorteccom\Dekaph\Dekatrian;
-$dekaph = new Dekatrian;
 ```
 
-Check date is valid.
+Check if a Dekatrian date is valid or not.
 
-``` php
+```php
 <?php
-$dekaph->checkDekatrian(2018, 13, 28);
-//Return boolean, true.
+Dekatrian::checkDekatrian(2018, 13, 28);
+// Return boolean, true
 ```
 
-Convert from dekatrian to gregorian.
+Convert from Dekatrian to Gregorian calendars.
 
-``` php
+```php
 <?php
-$dekaph->dekatoGreg(2018, 13, 28);
-//Return string, 2018-12-31.
+Dekatrian::dekatoGreg(2018, 13, 28);
+// Return string, 2018-12-31
 ```
 
-Convert from gregorian to dekatrian.
+Convert from Gregorian to Dekatrian calendars.
 
-``` php
+```php
 <?php
-$dekaph->gregToDeka(2018, 12, 31);
-//Return string, 2018-13-28.
+Dekatrian::gregToDeka(2018, 12, 31);
+// Return string, 2018-13-28
 ```
 
 ## Change log
@@ -76,7 +75,7 @@ Please see [CHANGELOG](docs/CHANGELOG.md) for more information on what has chang
 ## Testing
 Test with [PHPUnit](https://phpunit.de), we also recommend [Xdebug](https://xdebug.org).
 
-``` bash
+```bash
 $ composer test
 ```
 
@@ -95,4 +94,4 @@ If you discover any security related issues, please email ``contato@vitortec.com
 
 ## License
 
-GPLv3. Please see [License File](LICENSE) for more information.
+GPL-3.0-or-later. Please see [License File](LICENSE) for more information.
