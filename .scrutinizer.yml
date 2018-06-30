@@ -1,17 +1,18 @@
 checks:
     php: true
-
-
 build:
     nodes:
         analysis:
             tests:
                 override:
-                    - vendor/bin/phpcbf -p --standard=PSR2 src/ tests/
-                    - vendor/bin/phpcs -p --standard=PSR2 src/ tests/
+                    - 'vendor/bin/phpcbf -p --standard=PSR2 src/ tests/'
+                    - 'vendor/bin/phpcs -p --standard=PSR2 src/ tests/'
                     -
-                        command: vendor/bin/phpunit --coverage-clover=build/clover.xml
+                        command: 'vendor/bin/phpunit --coverage-clover=build/clover.xml'
                         coverage:
                             file: build/clover.xml
                             format: clover
                     - php-scrutinizer-run
+                    -
+                        command: phpcs-run
+                        use_website_config: true
