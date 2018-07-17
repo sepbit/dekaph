@@ -14,17 +14,15 @@ This is a simple library for converting dates between [Dekatrian](https://www.fa
 This package is compatible with [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) and [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md).
 
 ## Structure
+
 This is the directory structure.
 
 ```
-build/
 docs/
-examples/
 src/
 tests/
 vendor/
 ```
-
 
 ## Install
 
@@ -35,6 +33,7 @@ $ composer require vitorteccom/dekaph
 ```
 
 ## Usage
+
 This is minimal example.
 
 ```php
@@ -42,45 +41,29 @@ This is minimal example.
 require __DIR__ .'/../vendor/autoload.php';
 
 use Vitorteccom\Dekaph\Dekatrian;
-```
 
-Check if a Dekatrian date is valid or not.
-
-```php
-<?php
-Dekatrian::checkDekatrian(2018, 13, 28);
-// Return boolean, true
-```
-
-Convert from Dekatrian to Gregorian calendars.
-
-```php
-<?php
+// Convert from Dekatrian to Gregorian calendars.
 Dekatrian::dekatoGreg(2018, 13, 28);
 // Return string, 2018-12-31
-```
 
-Convert from Gregorian to Dekatrian calendars.
-
-```php
-<?php
+// Convert from Gregorian to Dekatrian calendars.
 Dekatrian::gregToDeka(2018, 12, 31);
 // Return string, 2018-13-28
 ```
 
 ## Change log
 
-Please see [CHANGELOG](docs/CHANGELOG.md) for more information on what has changed recently.
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Testing
 
-```bash
+``` bash
 $ composer test
 ```
 
 ## Contributing
 
-Please see [CONTRIBUTING](docs/CONTRIBUTING.md) and [CODE_OF_CONDUCT](docs/CODE_OF_CONDUCT.md) for details.
+Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) for details.
 
 ## Security
 

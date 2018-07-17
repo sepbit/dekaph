@@ -1,4 +1,5 @@
+composer.lock
 .git/
 build/
-composer.lock
+docs/phpdoc/
 vendor/
