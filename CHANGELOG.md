@@ -4,7 +4,7 @@ All notable changes will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## v2.0.1 2018-07-17
+## v2.0.1 2018-07-18
 
 ### Changed
 
