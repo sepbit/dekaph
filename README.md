@@ -1,7 +1,7 @@
 # Dekaph
 DEKAtrian for PHp
 
-[![Software License](https://img.shields.io/github/license/vitorteccom/dekaph.svg)](LICENSE)
+[![Software License](https://img.shields.io/github/license/vitorteccom/dekaph.svg)](LICENSE.md)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vitorteccom/dekaph.svg)](https://packagist.org/packages/vitorteccom/dekaph)
 [![Total Downloads](https://img.shields.io/packagist/dt/vitorteccom/dekaph.svg)](https://packagist.org/packages/vitorteccom/dekaph)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vitorteccom/dekaph/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekaph/?branch=master)
