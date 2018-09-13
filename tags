@@ -1,0 +1,123 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/c45511a3/
+0	composer.json	/^        "Vitortec.com",$/;"	s	array:keywords
+0	composer.json	/^        {$/;"	o	array:authors
+0. Definitions.	LICENSE.md	/^#### 0. Definitions.$/;"	t
+1	composer.json	/^        "converter",$/;"	s	array:keywords
+1. Source Code.	LICENSE.md	/^#### 1. Source Code.$/;"	t
+10. Automatic Licensing of Downstream Recipients.	LICENSE.md	/^#### 10. Automatic Licensing of Downstream Recipients.$/;"	t
+11. Patents.	LICENSE.md	/^#### 11. Patents.$/;"	t
+12. No Surrender of Others' Freedom.	LICENSE.md	/^#### 12. No Surrender of Others' Freedom.$/;"	t
+13. Use with the GNU Affero General Public License.	LICENSE.md	/^#### 13. Use with the GNU Affero General Public License.$/;"	t
+14. Revised Versions of this License.	LICENSE.md	/^#### 14. Revised Versions of this License.$/;"	t
+15. Disclaimer of Warranty.	LICENSE.md	/^#### 15. Disclaimer of Warranty.$/;"	t
+16. Limitation of Liability.	LICENSE.md	/^#### 16. Limitation of Liability.$/;"	t
+17. Interpretation of Sections 15 and 16.	LICENSE.md	/^#### 17. Interpretation of Sections 15 and 16.$/;"	t
+2	composer.json	/^        "date",$/;"	s	array:keywords
+2. Basic Permissions.	LICENSE.md	/^#### 2. Basic Permissions.$/;"	t
+3	composer.json	/^        "calendar",$/;"	s	array:keywords
+3. Protecting Users' Legal Rights From Anti-Circumvention Law.	LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t
+4	composer.json	/^        "dekatrian",$/;"	s	array:keywords
+4. Conveying Verbatim Copies.	LICENSE.md	/^#### 4. Conveying Verbatim Copies.$/;"	t
+5	composer.json	/^        "gregorian"$/;"	s	array:keywords
+5. Conveying Modified Source Versions.	LICENSE.md	/^#### 5. Conveying Modified Source Versions.$/;"	t
+6. Conveying Non-Source Forms.	LICENSE.md	/^#### 6. Conveying Non-Source Forms.$/;"	t
+7. Additional Terms.	LICENSE.md	/^#### 7. Additional Terms.$/;"	t
+8. Termination.	LICENSE.md	/^#### 8. Termination.$/;"	t
+9. Acceptance Not Required for Having Copies.	LICENSE.md	/^#### 9. Acceptance Not Required for Having Copies.$/;"	t
+Added	CHANGELOG.md	/^### Added$/;"	S
+Attribution	CODE_OF_CONDUCT.md	/^## Attribution$/;"	s
+Building	docs/README.md	/^## Building$/;"	s
+Change log	README.md	/^## Change log$/;"	s
+Changed	CHANGELOG.md	/^## Changed$/;"	s
+Changed	CHANGELOG.md	/^### Changed$/;"	S
+Changelog	CHANGELOG.md	/^# Changelog$/;"	c
+Checklist:	.github/PULL_REQUEST_TEMPLATE.md	/^## Checklist:$/;"	s
+Context	.github/ISSUE_TEMPLATE.md	/^## Context$/;"	s
+Contributing	CONTRIBUTING.md	/^# Contributing$/;"	c
+Contributing	README.md	/^## Contributing$/;"	s
+Contributor Covenant Code of Conduct	CODE_OF_CONDUCT.md	/^# Contributor Covenant Code of Conduct$/;"	c
+Credits	README.md	/^## Credits$/;"	s
+Dekaph	README.md	/^# Dekaph$/;"	c
+Dekatrian	src/Dekatrian.php	/^class Dekatrian$/;"	c	namespace:Vitorteccom\\Dekaph
+Dekatrian	tests/DekatrianTest.php	/^use Vitorteccom\\Dekaph\\Dekatrian;$/;"	a	namespace:Vitorteccom\\Dekaph	typeref:unknown:Vitorteccom\\Dekaph\\Dekatrian
+DekatrianTest	tests/DekatrianTest.php	/^class DekatrianTest extends TestCase$/;"	c	namespace:Vitorteccom\\Dekaph
+Description	.github/PULL_REQUEST_TEMPLATE.md	/^## Description$/;"	s
+Detailed description	.github/ISSUE_TEMPLATE.md	/^## Detailed description$/;"	s
+Documentation	docs/README.md	/^# Documentation$/;"	c
+Enforcement	CODE_OF_CONDUCT.md	/^## Enforcement$/;"	s
+GNU GENERAL PUBLIC LICENSE	LICENSE.md	/^### GNU GENERAL PUBLIC LICENSE$/;"	S
+How has this been tested?	.github/PULL_REQUEST_TEMPLATE.md	/^## How has this been tested?$/;"	s
+How to Apply These Terms to Your New Programs	LICENSE.md	/^### How to Apply These Terms to Your New Programs$/;"	S
+Install	README.md	/^## Install$/;"	s
+License	README.md	/^## License$/;"	s
+Motivation and context	.github/PULL_REQUEST_TEMPLATE.md	/^## Motivation and context$/;"	s
+Our Pledge	CODE_OF_CONDUCT.md	/^## Our Pledge$/;"	s
+Our Responsibilities	CODE_OF_CONDUCT.md	/^## Our Responsibilities$/;"	s
+Our Standards	CODE_OF_CONDUCT.md	/^## Our Standards$/;"	s
+Possible implementation	.github/ISSUE_TEMPLATE.md	/^## Possible implementation$/;"	s
+Preamble	LICENSE.md	/^### Preamble$/;"	S
+Pull Requests	CONTRIBUTING.md	/^## Pull Requests$/;"	s
+Removed	CHANGELOG.md	/^### Removed$/;"	S
+Running Tests	CONTRIBUTING.md	/^## Running Tests$/;"	s
+Scope	CODE_OF_CONDUCT.md	/^## Scope$/;"	s
+Screenshots (if appropriate)	.github/PULL_REQUEST_TEMPLATE.md	/^## Screenshots (if appropriate)$/;"	s
+Security	README.md	/^## Security$/;"	s
+Structure	README.md	/^## Structure$/;"	s
+TERMS AND CONDITIONS	LICENSE.md	/^### TERMS AND CONDITIONS$/;"	S
+TestCase	tests/DekatrianTest.php	/^use PHPUnit\\Framework\\TestCase;$/;"	a	namespace:Vitorteccom\\Dekaph	typeref:unknown:PHPUnit\\Framework\\TestCase
+Testing	README.md	/^## Testing$/;"	s
+Types of changes	.github/PULL_REQUEST_TEMPLATE.md	/^## Types of changes$/;"	s
+Usage	README.md	/^## Usage$/;"	s
+Vitorteccom\\Dekaph	src/Dekatrian.php	/^namespace Vitorteccom\\Dekaph;$/;"	n
+Vitorteccom\\Dekaph	tests/DekatrianTest.php	/^namespace Vitorteccom\\Dekaph;$/;"	n
+Vitorteccom\\\\Dekaph\\\\	composer.json	/^            "Vitorteccom\\\\Dekaph\\\\": "src\/"$/;"	s	object:autoload.psr-4
+Vitorteccom\\\\Dekaph\\\\	composer.json	/^            "Vitorteccom\\\\Dekaph\\\\": "tests\/"$/;"	s	object:autoload-dev.psr-4
+Your environment	.github/ISSUE_TEMPLATE.md	/^## Your environment$/;"	s
+[0.1.0] - 2017-09-22	CHANGELOG.md	/^## [0.1.0] - 2017-09-22$/;"	s
+[1.0.0] - 2018-01-31	CHANGELOG.md	/^## [1.0.0] - 2018-01-31$/;"	s
+[2.0.0] - 2018-04-08	CHANGELOG.md	/^## [2.0.0] - 2018-04-08$/;"	s
+[2.0.1] 2018-07-18	CHANGELOG.md	/^## [2.0.1] 2018-07-18$/;"	s
+[3.0.0] 2018-09-13	CHANGELOG.md	/^## [3.0.0] 2018-09-13$/;"	s
+authors	composer.json	/^    "authors": [$/;"	a
+autoload	composer.json	/^    "autoload": {$/;"	o
+autoload-dev	composer.json	/^    "autoload-dev": {$/;"	o
+check-style	composer.json	/^        "check-style": "phpcs -p --standard=PSR2 src\/ tests\/",$/;"	s	object:scripts
+checkDekatrian	src/Dekatrian.php	/^    private static function checkDekatrian($year, $month, $day)$/;"	f	class:Vitorteccom\\Dekaph\\Dekatrian
+dekaToGreg	src/Dekatrian.php	/^    public static function dekaToGreg($year, $month, $day)$/;"	f	class:Vitorteccom\\Dekaph\\Dekatrian
+description	composer.json	/^    "description": "This is a simple library to convert Dekatrian and Gregorian.",$/;"	s
+doc	composer.json	/^        "doc": "phpdoc --visibility=public -d src\/ -t docs\/phpdoc\/",$/;"	s	object:scripts
+docs	composer.json	/^        "docs": "https:\/\/github.com\/vitorteccom\/dekaph\/tree\/master\/docs",$/;"	s	object:support
+email	composer.json	/^            "email": "vitor.guia@vitortec.com",$/;"	s	object:authors.0
+email	composer.json	/^        "email": "contato@vitortec.com",$/;"	s	object:support
+fix-style	composer.json	/^        "fix-style": "phpcbf -p --standard=PSR2 src\/ tests\/",$/;"	s	object:scripts
+gregToDeka	src/Dekatrian.php	/^    public static function gregToDeka($year, $month, $day)$/;"	f	class:Vitorteccom\\Dekaph\\Dekatrian
+homepage	composer.json	/^            "homepage": "https:\/\/github.com\/vitoranguia",$/;"	s	object:authors.0
+homepage	composer.json	/^    "homepage": "https:\/\/github.com\/vitorteccom\/dekaph",$/;"	s
+issues	composer.json	/^        "issues": "https:\/\/github.com\/vitorteccom\/dekaph\/issues",$/;"	s	object:support
+keywords	composer.json	/^    "keywords": [$/;"	a
+license	composer.json	/^    "license": "GPL-3.0-or-later",$/;"	s
+name	composer.json	/^            "name": "Vitor Guia",$/;"	s	object:authors.0
+name	composer.json	/^    "name": "vitorteccom\/dekaph",$/;"	s
+php	composer.json	/^        "php" : "^7.0"$/;"	s	object:require
+phpdocumentor/phpdocumentor	composer.json	/^        "phpdocumentor\/phpdocumentor": "^2.9",$/;"	s	object:require-dev
+phpunit/phpunit	composer.json	/^        "phpunit\/phpunit" : "^6.5"$/;"	s	object:require-dev
+psr-4	composer.json	/^        "psr-4": {$/;"	o	object:autoload
+psr-4	composer.json	/^        "psr-4": {$/;"	o	object:autoload-dev
+require	composer.json	/^    "require": {$/;"	o
+require-dev	composer.json	/^    "require-dev": {$/;"	o
+role	composer.json	/^            "role": "Developer"$/;"	s	object:authors.0
+scripts	composer.json	/^    "scripts": {$/;"	o
+source	composer.json	/^        "source": "https:\/\/github.com\/vitorteccom\/dekaph",$/;"	s	object:support
+squizlabs/php_codesniffer	composer.json	/^        "squizlabs\/php_codesniffer": "^3.3",$/;"	s	object:require-dev
+support	composer.json	/^    "support": {$/;"	o
+test	composer.json	/^        "test": "phpunit"$/;"	s	object:scripts
+testDekaToGreg	tests/DekatrianTest.php	/^    public function testDekaToGreg()$/;"	f	class:Vitorteccom\\Dekaph\\DekatrianTest
+testGregToDeka	tests/DekatrianTest.php	/^    public function testGregToDeka()$/;"	f	class:Vitorteccom\\Dekaph\\DekatrianTest
+type	composer.json	/^    "type": "library",$/;"	s
+wiki	composer.json	/^        "wiki": "https:\/\/github.com\/vitorteccom\/dekaph\/wiki"$/;"	s	object:support
