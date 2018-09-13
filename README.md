@@ -43,7 +43,7 @@ require __DIR__ .'/../vendor/autoload.php';
 use Vitorteccom\Dekaph\Dekatrian;
 
 // Convert from Dekatrian to Gregorian calendars.
-Dekatrian::dekatoGreg(2018, 13, 28);
+Dekatrian::dekaToGreg(2018, 13, 28);
 // Return string, 2018-12-31
 
 // Convert from Gregorian to Dekatrian calendars.
