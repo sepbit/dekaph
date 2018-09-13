@@ -4,19 +4,24 @@ All notable changes will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## v2.0.1 2018-07-18
+## [3.0.0] 2018-09-13
+
+### Changed
+
+- dekatoGreg method to dekaToGreg 
+
+## [2.0.1] 2018-07-18
 
 ### Changed
 
 - Appropriate legal notices
 
-## v2.0.0 - 2018-04-08
+## [2.0.0] - 2018-04-08
 
 ### Changed
 - Change to static methods
 
-
-## v1.0.0 - 2018-01-31
+## [1.0.0] - 2018-01-31
 
 ### Added
 - tests/ directory, for unitary tests
@@ -31,8 +36,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Removed
 - functions-js/ directory, JavaScript support has been discontinued.
 
-
-## v0.1.0 - 2017-09-22
+## [0.1.0] - 2017-09-22
 
 ### Added
 - First release!

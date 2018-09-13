@@ -21,7 +21,6 @@
  * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2017-2018 Vitortec.com
  * @license   http://www.gnu.org/licenses GPL-3.0-or-later
- * @version   2.0.1
  * @see       https://github.com/vitorteccom/dekaph Repository of Dekaph
  */
 
@@ -70,7 +69,7 @@ class Dekatrian
      *
      * @return string Gregorian date, e.g. 2018-12-31
      */
-    public static function dekatoGreg($year, $month, $day)
+    public static function dekaToGreg($year, $month, $day)
     {
         if (!self::checkDekatrian($year, $month, $day)) {
             return false;

@@ -21,7 +21,6 @@
  * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2017-2018 Vitortec.com
  * @license   http://www.gnu.org/licenses GPL-3.0-or-later
- * @version   2.0.1
  * @see       https://github.com/vitorteccom/dekaph Repository of Dekaph
  */
 
@@ -37,29 +36,29 @@ class DekatrianTest extends TestCase
 {
 
     /**
-     * Test dekatoGreg method
+     * Test dekaToGreg method
      *
      * @return void
      */
-    public function testDekatoGreg()
+    public function testDekaToGreg()
     {
         $this->assertEquals(
             '2018-1-1',
-            Dekatrian::dekatoGreg(2018, 0, 1)
+            Dekatrian::dekaToGreg(2018, 0, 1)
         );
 
         $this->assertEquals(
             '2016-1-2',
-            Dekatrian::dekatoGreg(2016, 0, 2)
+            Dekatrian::dekaToGreg(2016, 0, 2)
         );
 
         $this->assertEquals(
             '2018-12-31',
-            Dekatrian::dekatoGreg(2018, 13, 28)
+            Dekatrian::dekaToGreg(2018, 13, 28)
         );
 
-        $this->assertFalse(Dekatrian::dekatoGreg(2018, 0, 2));
-        $this->assertFalse(Dekatrian::dekatoGreg(2018, 14, 2));
+        $this->assertFalse(Dekatrian::dekaToGreg(2018, 0, 2));
+        $this->assertFalse(Dekatrian::dekaToGreg(2018, 14, 2));
     }
 
     /**
