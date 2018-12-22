@@ -32,7 +32,7 @@
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "^2.9",
-        "squizlabs/php_codesniffer": "^3.3",
+        "squizlabs/php_codesniffer": "^3.4",
         "phpunit/phpunit" : "^6.5"
     },
     "autoload": {
@@ -45,6 +45,8 @@
             "Vitorteccom\\Dekaph\\": "tests/"
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
         "doc": "phpdoc --visibility=public -d src/ -t docs/phpdoc/",
         "fix-style": "phpcbf -p --standard=PSR2 src/ tests/",

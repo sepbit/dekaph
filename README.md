@@ -76,4 +76,4 @@ If you discover any security related issues, please email ``contato@vitortec.com
 
 ## License
 
-GPL-3.0-or-later. Please see [License File](LICENSE.md) for more information.
+GPL-3.0-or-later. Please see [COPYING File](COPYING) for more information.
