@@ -34,55 +34,115 @@ use Vitorteccom\Dekaph\Dekatrian;
  */
 class DekatrianTest extends TestCase
 {
-
     /**
-     * Test dekaToGreg method
+     * Test private method checkDekatrian - 2018-0-2
+     *
+     * @expectedException BadMethodCallException
      *
      * @return void
      */
-    public function testDekaToGreg()
+    public function testCheckDekatrian201802()
+    {
+        Dekatrian::dekaToGreg(2018, 0, 2);
+    }
+
+    /**
+     * Test private method checkDekatrian - 2018-14-2
+     *
+     * @expectedException BadMethodCallException
+     */
+    public function testCheckDekatrian2018142()
+    {
+        Dekatrian::dekaToGreg(2018, 14, 2);
+    }
+
+    /**
+     * Test public method dekaToGreg - Achronian day
+     *
+     * @return void
+     */
+    public function testDekaToGregAchronianDay()
     {
         $this->assertEquals(
             '2018-1-1',
             Dekatrian::dekaToGreg(2018, 0, 1)
         );
+    }
 
+    /**
+     * Test public method dekaToGreg - Sinchronian day
+     *
+     * @return void
+     */
+    public function testDekaToGregSinchronianDay()
+    {
         $this->assertEquals(
             '2016-1-2',
             Dekatrian::dekaToGreg(2016, 0, 2)
         );
+    }
 
+     /**
+     * Test public method dekaToGreg - Other day
+     *
+     * @return void
+     */
+    public function testDekaToGregOtherDay()
+    {
         $this->assertEquals(
             '2018-12-31',
             Dekatrian::dekaToGreg(2018, 13, 28)
         );
-
-        $this->assertFalse(Dekatrian::dekaToGreg(2018, 0, 2));
-        $this->assertFalse(Dekatrian::dekaToGreg(2018, 14, 2));
     }
 
     /**
-     * Test gregToDeka method
+     * Test public method gregToDeka - checkdate
+     *
+     * @expectedException BadMethodCallException
      *
      * @return void
      */
-    public function testGregToDeka()
+    public function testGregToDekaCheckdate()
+    {
+        Dekatrian::gregToDeka(2018, 13, 1);
+    }
+
+    /**
+     * Test public method gregToDeka - Achronian day
+     *
+     * @return void
+     */
+    public function testGregToDekaAchronianDay()
     {
         $this->assertEquals(
             '2018-0-1',
             Dekatrian::gregToDeka(2018, 1, 1)
         );
+    }
 
+    /**
+     * Test public method gregToDeka - Sinchronian day
+     *
+     * @return void
+     */
+    public function testGregToDekaSinchronianDay()
+    {
         $this->assertEquals(
             '2016-0-2',
             Dekatrian::gregToDeka(2016, 1, 2)
         );
+    }
 
+    /**
+     * Test public method gregToDeka - Other day
+     *
+     * @return void
+     */
+    public function testGregToDekaOtherDay()
+    {
         $this->assertEquals(
             '2018-13-28',
             Dekatrian::gregToDeka(2018, 12, 31)
         );
-
-        $this->assertFalse(Dekatrian::gregToDeka(2018, 13, 1));
     }
 }
