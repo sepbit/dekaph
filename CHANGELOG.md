@@ -4,6 +4,11 @@ All notable changes will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## [3.1.1] - 2019-02-10
+
+### Changed
+- Changed README.md
+
 ## [3.1.0] - 2019-01-29
 
 ### Added
