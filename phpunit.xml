@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Vitortec Test Suite">
+        <testsuite name="Tests">
             <directory suffix="Test.php">tests/</directory>
         </testsuite>
     </testsuites>

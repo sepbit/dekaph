@@ -1,7 +1,7 @@
 <?php
 /**
  * Dekaph - DEKAtrian for PHp
- * Copyright (C) 2017-2018  Vitortec.com
+ * Copyright (C) 2017-2019  Vitortec.com
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
  * PHP version 7.0
  *
  * @author    Vitor Guia <vitor.guia@vitortec.com>
- * @copyright 2017-2018 Vitortec.com
+ * @copyright 2017-2019 Vitortec.com
  * @license   http://www.gnu.org/licenses GPL-3.0-or-later
  * @see       https://github.com/vitorteccom/dekaph Repository of Dekaph
  */
