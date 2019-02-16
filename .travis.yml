@@ -11,7 +11,7 @@ script:
   - composer update
   - composer fix-style
   - composer check-style
-  - vendor/bin/phpunit --coverage-clover=build/clover.xml
+  - composer test
 
 after_success:
-  - vendor/bin/php-coveralls
+  - vendor/bin/php-coveralls -v
