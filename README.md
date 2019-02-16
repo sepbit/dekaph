@@ -4,6 +4,7 @@ DEKAtrian for PHp
 [![Software License](https://img.shields.io/github/license/vitorteccom/dekaph.svg)](COPYING)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vitorteccom/dekaph.svg)](https://packagist.org/packages/vitorteccom/dekaph)
 [![Total Downloads](https://img.shields.io/packagist/dt/vitorteccom/dekaph.svg)](https://packagist.org/packages/vitorteccom/dekaph)
+[![Build Status](https://travis-ci.com/vitorteccom/dekaph.svg?branch=master)](https://travis-ci.com/vitorteccom/dekaph)
 [![Coverage Status](https://coveralls.io/repos/github/vitorteccom/dekaph/badge.svg?branch=master)](https://coveralls.io/github/vitorteccom/dekaph?branch=master)
 
 This is a simple library for converting dates between [Dekatrian](https://www.facebook.com/dekatrian/) and [Gregorian](https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar) calendars. This library is not official.
