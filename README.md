@@ -4,10 +4,7 @@ DEKAtrian for PHp
 [![Software License](https://img.shields.io/github/license/vitorteccom/dekaph.svg)](COPYING)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vitorteccom/dekaph.svg)](https://packagist.org/packages/vitorteccom/dekaph)
 [![Total Downloads](https://img.shields.io/packagist/dt/vitorteccom/dekaph.svg)](https://packagist.org/packages/vitorteccom/dekaph)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vitorteccom/dekaph/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekaph/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/vitorteccom/dekaph/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekaph/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/vitorteccom/dekaph/badges/build.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekaph/build-status/master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/vitorteccom/dekaph/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Coverage Status](https://coveralls.io/repos/github/vitorteccom/dekaph/badge.svg?branch=master)](https://coveralls.io/github/vitorteccom/dekaph?branch=master)
 
 This is a simple library for converting dates between [Dekatrian](https://www.facebook.com/dekatrian/) and [Gregorian](https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar) calendars. This library is not official.
 

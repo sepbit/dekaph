@@ -1,0 +1,17 @@
+sudo: false
+
+language: php
+
+php: 7.0
+
+install:
+  - composer require php-coveralls/php-coveralls
+
+script:
+  - composer update
+  - composer fix-style
+  - composer check-style
+  - vendor/bin/phpunit --coverage-clover=build/clover.xml
+
+after_success:
+  - vendor/bin/php-coveralls
