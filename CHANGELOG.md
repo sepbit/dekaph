@@ -4,6 +4,10 @@ All notable changes will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## [3.1.4] 2019-03-02
+### Changed
+- Update composer.json
+
 ## [3.1.3] 2019-02-16
 ### Changed
 - Scrutinizer CI to Travis CI and Coveralls
