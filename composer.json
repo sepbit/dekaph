@@ -21,11 +21,8 @@
         }
     ],
     "support": {
-        "docs": "https://github.com/vitorteccom/dekaph/tree/master/docs",
         "email": "contato@vitortec.com",
-        "issues": "https://github.com/vitorteccom/dekaph/issues",
-        "source": "https://github.com/vitorteccom/dekaph",
-        "wiki": "https://github.com/vitorteccom/dekaph/wiki"
+        "issues": "https://github.com/vitorteccom/dekaph/issues"
     },
     "require": {
         "php" : "^7.0"
