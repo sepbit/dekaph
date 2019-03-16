@@ -46,7 +46,7 @@ Pull Requests not accepted, please contact us at: `contato@vitortec.com`.
 ### Contributors
 
 - [Vitor Guia](https://github.com/vitoranguia)
-- [All Contributors](https://github.com/vitorteccom/dekajs/contributors)
+- [All Contributors](https://github.com/vitorteccom/dekaph/contributors)
 
 ## License
 
