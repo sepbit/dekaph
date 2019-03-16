@@ -1,8 +1,13 @@
 # Changelog
 
-All notable changes will be documented in this file.
+See [Keep a Changelog](http://keepachangelog.com/).
 
-Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
+## [3.1.5] 2019-03-16
+### Changed
+- Information for contribution
+
+### Removed
+- CODE_OF_CONDUCT.md CONTRIBUTING.md files
 
 ## [3.1.4] 2019-03-02
 ### Changed

@@ -1,5 +1,4 @@
 # Dekaph
-DEKAtrian for PHp
 
 [![Software License](https://img.shields.io/github/license/vitorteccom/dekaph.svg)](COPYING)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vitorteccom/dekaph.svg)](https://packagist.org/packages/vitorteccom/dekaph)
@@ -7,24 +6,15 @@ DEKAtrian for PHp
 [![Build Status](https://travis-ci.com/vitorteccom/dekaph.svg?branch=master)](https://travis-ci.com/vitorteccom/dekaph)
 [![Coverage Status](https://coveralls.io/repos/github/vitorteccom/dekaph/badge.svg?branch=master)](https://coveralls.io/github/vitorteccom/dekaph?branch=master)
 
+> DEKAtrian for PHp
+
 This is a simple library for converting dates between [Dekatrian](https://www.facebook.com/dekatrian/) and [Gregorian](https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar) calendars. This library is not official.
 
 This package is compatible with [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) and [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md).
 
-## Structure
-
-This is the directory structure.
-
-```
-docs/
-src/
-tests/
-vendor/
-```
-
 ## Install
 
-Via Composer.
+This project uses [PHP](https://php.net) and [Composer](https://getcomposer.org).
 
 ```bash
 $ composer require vitorteccom/dekaph
@@ -49,29 +39,15 @@ Dekatrian::gregToDeka(2018, 12, 31);
 // Return string, 2018-13-28
 ```
 
-## Change log
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
-
 ## Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) for details.
+Pull Requests not accepted, please contact us at: `contato@vitortec.com`.
 
-## Security
-
-If you discover any security related issues, please email ``contato@vitortec.com`` instead of using the issue tracker.
-
-## Credits
+### Contributors
 
 - [Vitor Guia](https://github.com/vitoranguia)
-- [All Contributors](../../contributors)
+- [All Contributors](https://github.com/vitorteccom/dekajs/contributors)
 
 ## License
 
-GPL-3.0-or-later. Please see [COPYING File](COPYING) for more information.
+GPL-3.0-or-later, please see [COPYING](COPYING) file for more information.
