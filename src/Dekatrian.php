@@ -1,7 +1,7 @@
 <?php
 /**
  * Dekaph - DEKAtrian for PHp
- * Copyright (C) 2017-2019  Vitortec.com
+ * Copyright (C) 2017-2019  SEPBIT
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,15 +18,15 @@
  *
  * PHP version 7.0
  *
- * @author    Vitor Guia <vitor.guia@vitortec.com>
- * @copyright 2017-2019 Vitortec.com
+ * @author    Vitor Guia <contato@vitor.guia.nom.br>
+ * @copyright 2017-2019 SEPBIT
  * @license   http://www.gnu.org/licenses GPL-3.0-or-later
- * @see       https://github.com/vitorteccom/dekaph Repository of Dekaph
+ * @see       https://notabug.org/sepbit/dekaph Repository of Dekaph
  */
 
 declare(strict_types=1);
 
-namespace Vitorteccom\Dekaph;
+namespace Sepbit\Dekaph;
 
 use BadMethodCallException;
 

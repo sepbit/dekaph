@@ -1,28 +1,28 @@
 {
-    "name": "vitorteccom/dekaph",
+    "name": "sepbit/dekaph",
     "description": "This is a simple library to convert Dekatrian and Gregorian.",
     "type": "library",
     "keywords": [
-        "Vitortec.com",
+        "SEPBIT",
         "converter",
         "date",
         "calendar",
         "dekatrian",
         "gregorian"
     ],
-    "homepage": "https://github.com/vitorteccom/dekaph",
+    "homepage": "https://notabug.org/sepbit/dekaph",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Vitor Guia",
-            "email": "vitor.guia@vitortec.com",
-            "homepage": "https://github.com/vitoranguia",
+            "email": "contato@vitor.guia.nom.br",
+            "homepage": "https://vitor.guia.nom.br",
             "role": "Developer"
         }
     ],
     "support": {
-        "email": "contato@vitortec.com",
-        "issues": "https://github.com/vitorteccom/dekaph/issues"
+        "email": "contato@sepbit.com",
+        "issues": "https://notabug.org/sepbit/dekaph/issues"
     },
     "require": {
         "php" : "^7.0"
@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Vitorteccom\\Dekaph\\": "src/"
+            "Sepbit\\Dekaph\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vitorteccom\\Dekaph\\": "tests/"
+            "Sepbit\\Dekaph\\": "tests/"
         }
     },
     "minimum-stability": "dev",
