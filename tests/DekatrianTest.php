@@ -21,7 +21,7 @@
  * @author    Vitor Guia <contato@vitor.guia.nom.br>
  * @copyright 2017-2019 SEPBIT
  * @license   http://www.gnu.org/licenses GPL-3.0-or-later
- * @see       https://notabug.org/sepbit/dekaph Repository of Dekaph
+ * @see       https://gitlab.com/sepbit/dekaph Repository of Dekaph
  */
 
 namespace Sepbit\Dekaph;
