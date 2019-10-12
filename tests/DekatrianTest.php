@@ -37,22 +37,22 @@ class DekatrianTest extends TestCase
     /**
      * Test private method checkDekatrian - 2018-0-2
      *
-     * @expectedException BadMethodCallException
-     *
      * @return void
      */
     public function testCheckDekatrian201802()
     {
+        $this->expectException('BadMethodCallException');
         Dekatrian::dekaToGreg(2018, 0, 2);
     }
 
     /**
      * Test private method checkDekatrian - 2018-14-2
      *
-     * @expectedException BadMethodCallException
+     * @return void
      */
     public function testCheckDekatrian2018142()
     {
+        $this->expectException('BadMethodCallException');
         Dekatrian::dekaToGreg(2018, 14, 2);
     }
 
@@ -98,12 +98,11 @@ class DekatrianTest extends TestCase
     /**
      * Test public method gregToDeka - checkdate
      *
-     * @expectedException BadMethodCallException
-     *
      * @return void
      */
     public function testGregToDekaCheckdate()
     {
+        $this->expectException('BadMethodCallException');
         Dekatrian::gregToDeka(2018, 13, 1);
     }
 
