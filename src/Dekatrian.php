@@ -1,7 +1,7 @@
 <?php
 /**
  * Dekaph - DEKAtrian for PHp
- * Copyright (C) 2017-2019  SEPBIT
+ * Copyright (C) 2017-2019  Sepbit
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
  * PHP version 7.0
  *
  * @author    Vitor Guia <contato@vitor.guia.nom.br>
- * @copyright 2017-2019 SEPBIT
+ * @copyright 2017-2019 Sepbit
  * @license   http://www.gnu.org/licenses GPL-3.0-or-later
  * @see       https://gitlab.com/sepbit/dekaph Repository of Dekaph
  */

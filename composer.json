@@ -3,7 +3,7 @@
     "description": "This is a simple library to convert Dekatrian and Gregorian.",
     "type": "library",
     "keywords": [
-        "SEPBIT",
+        "Sepbit",
         "converter",
         "date",
         "calendar",
@@ -40,15 +40,15 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Sepbit\\Dekaph\\": "tests/"
+            "Sepbit\\Dekaph\\": "test/"
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "doc": "phpdoc --visibility=public -d src/ -t docs/phpdoc/",
-        "fix-style": "phpcbf -p --standard=PSR2 src/ tests/",
-        "check-style": "phpcs -p --standard=PSR2 src/ tests/",
+        "doc": "phpdoc --visibility=public -d src/ -t doc/phpdoc/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/ test/",
+        "check-style": "phpcs -p --standard=PSR2 src/ test/",
         "test": "phpunit"
     }
 }
