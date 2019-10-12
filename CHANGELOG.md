@@ -2,11 +2,6 @@
 
 See [Keep a Changelog](http://keepachangelog.com/).
 
-## [3.2.1] 2019-10-12
-### Changed
-- Minor improvements
-
-
 ## [3.2.0] 2019-10-12
 ### Changed
 - Change from NotABug to GitLab
