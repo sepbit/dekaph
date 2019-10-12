@@ -10,7 +10,7 @@
         "dekatrian",
         "gregorian"
     ],
-    "homepage": "https://notabug.org/sepbit/dekaph",
+    "homepage": "https://gitlab.com/sepbit/dekaph",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -22,15 +22,16 @@
     ],
     "support": {
         "email": "contato@sepbit.com",
-        "issues": "https://notabug.org/sepbit/dekaph/issues"
+        "issues": "https://gitlab.com/sepbit/dekaph/issues"
     },
     "require": {
         "php" : "^7.0"
     },
     "require-dev": {
+        "jms/serializer": "1.7.*",
         "phpdocumentor/phpdocumentor": "^2.9",
-        "squizlabs/php_codesniffer": "^3.4",
-        "phpunit/phpunit" : "^6.5"
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpunit/phpunit" : "^8.4"
     },
     "autoload": {
         "psr-4": {
