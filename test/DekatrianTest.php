@@ -15,13 +15,6 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- *
- * PHP version 7.0
- *
- * @author    Vitor Guia <contato@vitor.guia.nom.br>
- * @copyright 2017-2019 Sepbit
- * @license   http://www.gnu.org/licenses GPL-3.0-or-later
- * @see       https://gitlab.com/sepbit/dekaph Repository of Dekaph
  */
 
 namespace Sepbit\Dekaph;
