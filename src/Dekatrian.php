@@ -63,7 +63,7 @@ class Dekatrian
      * @param int $month Dekatrian month
      * @param int $day   Dekatrian day
      *
-     * @throws BadMethodCallException   If not a valid Dekatrian date
+     * @throws BadMethodCallException   Is not a valid Dekatrian date
      *
      * @return string Gregorian date, e.g. 2018-12-31
      */
@@ -102,7 +102,7 @@ class Dekatrian
      * @param int $month Gregorian month
      * @param int $day   Gregorian day
      *
-     * @throws BadMethodCallException   If not a valid Gregorian date
+     * @throws BadMethodCallException   Is not a valid Gregorian date
      *
      * @return string Dekatrian date, e.g. 2018-13-28
      */
