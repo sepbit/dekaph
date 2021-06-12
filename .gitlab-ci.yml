@@ -7,7 +7,7 @@ cache:
 before_script:
   - apt-get update -yqq
   - apt-get install -yqq git libcurl4-openssl-dev
-  - docker-php-ext-install curl
+  - docker-php-ext-install curl intl gdintl gd zip
   - pecl install xdebug
   - docker-php-ext-enable xdebug
   - curl -sS https://getcomposer.org/installer | php
