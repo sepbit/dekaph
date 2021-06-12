@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Dekaph - DEKAtrian for PHp
  * Copyright (C) 2017-2019  Sepbit

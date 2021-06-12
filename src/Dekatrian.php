@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Dekaph - DEKAtrian for PHp
  * Copyright (C) 2017-2019  Sepbit
@@ -73,8 +74,8 @@ class Dekatrian
             throw new BadMethodCallException('The provider arguments are not a valid Dekatrian date');
         }
 
-        $yearDay = ($month*28)-28;
-        $yearDay = $yearDay+$day;
+        $yearDay = ($month * 28) - 28;
+        $yearDay = $yearDay + $day;
 
         /** leap year */
         if (date('L', mktime(0, 0, 0, 1, 1, $year))) {
@@ -82,13 +83,13 @@ class Dekatrian
 
             /** Sinchronian day */
             if ($month == 0 && $day == 2) {
-                return $year .'-1-2';
+                return $year . '-1-2';
             }
         }
 
         /** Achronian day */
         if ($month == 0 && $day == 1) {
-            return $year .'-1-1';
+            return $year . '-1-1';
         }
 
         $mktime = mktime(0, 0, 0, 1, 1, $year);
@@ -120,17 +121,17 @@ class Dekatrian
 
             /** Sinchronian day */
             if ($month == 1 && $day == 2) {
-                return $year .'-0-2';
+                return $year . '-0-2';
             }
         }
 
         /** Achronian day */
         if ($month == 1 && $day == 1) {
-            return $year .'-0-1';
+            return $year . '-0-1';
         }
 
-        $month = floor($yearDay/28);
-        $day = $yearDay-($month*28);
+        $month = floor($yearDay / 28);
+        $day = $yearDay - ($month * 28);
         $month++;
 
         if (!$day) {
@@ -138,6 +139,6 @@ class Dekatrian
             $month--;
         }
 
-        return $year .'-'. $month .'-'. $day;
+        return $year . '-' . $month . '-' . $day;
     }
 }
