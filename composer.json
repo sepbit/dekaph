@@ -25,13 +25,11 @@
         "issues": "https://gitlab.com/sepbit/dekaph/issues"
     },
     "require": {
-        "php" : "^7.2"
+        "php" : "^7.3"
     },
     "require-dev": {
-        "jms/serializer": "1.7.*",
-        "phpdocumentor/phpdocumentor": "^2.9",
-        "squizlabs/php_codesniffer": "^3.5",
-        "phpunit/phpunit" : "^8.4"
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpunit/phpunit" : "^9.5"
     },
     "autoload": {
         "psr-4": {
@@ -47,8 +45,8 @@
     "prefer-stable": true,
     "scripts": {
         "doc": "phpdoc --visibility=public -d src/ -t doc/phpdoc/",
-        "fix-style": "phpcbf -p --standard=PSR2 src/ test/",
-        "check-style": "phpcs -p --standard=PSR2 src/ test/",
+        "fix-style": "phpcbf -p --standard=PSR12 src/ test/",
+        "check-style": "phpcs -p --standard=PSR12 src/ test/",
         "test": "phpunit"
     }
 }
