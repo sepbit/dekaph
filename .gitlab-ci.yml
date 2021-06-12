@@ -6,7 +6,7 @@ cache:
 
 before_script:
   - apt-get update -yqq
-  - apt-get install -yqq git libcurl4-openssl-dev
+  - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
   - docker-php-ext-install curl zip
   - pecl install xdebug
   - docker-php-ext-enable xdebug
