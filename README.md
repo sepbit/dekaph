@@ -4,7 +4,7 @@
 
 This is a simple library for converting dates between [Dekatrian](https://www.facebook.com/dekatrian/) and [Gregorian](https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar) calendars. This library is not official.
 
-This package is compatible with [PSR-12](https://www.php-fig.org/psr/psr-12) and [PSR-4](https://www.php-fig.org/psr/psr-4).
+This package is compatible with [PSR-12](https://www.php-fig.org/psr/psr-12), [PSR-4](https://www.php-fig.org/psr/psr-4) and [PHP Insights](https://phpinsights.com).
 
 ## Install
 
