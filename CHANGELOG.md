@@ -2,11 +2,11 @@
 
 See [Keep a Changelog](http://keepachangelog.com/).
 
-## [3.2.1] 2021-06-23
+## [3.2.2] 2021-06-23
 ### Added
 - Added PHP Insights
 
-## [3.2.2] 2021-06-12
+## [3.2.1] 2021-06-12
 ### Changed
 - Minor corrections
 
