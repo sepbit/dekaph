@@ -30,34 +30,6 @@ use BadMethodCallException;
 class Dekatrian
 {
     /**
-     * Check if a Dekatrian date is valid or not
-     *
-     * @param int $year  Dekatrian year
-     * @param int $month Dekatrian month
-     * @param int $day   Dekatrian day
-     *
-     * @return bool Dekatrian date is valid or not
-     */
-    private static function checkDekatrian(int $year, int $month, int $day): bool
-    {
-        if (date('L', mktime(0, 0, 0, 1, 1, $year))) {
-            if ($month == 0 && $day > 2) {
-                return false;
-            }
-        } else {
-            if ($month == 0 && $day > 1) {
-                return false;
-            }
-        }
-
-        if ($month > 13 || $day > 28) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * Convert a Dekatrian date to Gregorian date
      *
      * @param int $year  Dekatrian year
@@ -70,30 +42,30 @@ class Dekatrian
      */
     public static function dekaToGreg(int $year, int $month, int $day): string
     {
-        if (!self::checkDekatrian($year, $month, $day)) {
-            throw new BadMethodCallException('The provider arguments are not a valid Dekatrian date');
+        if (! self::checkDekatrian($year, $month, $day)) {
+            throw new BadMethodCallException('Not a valid Dekatrian date');
         }
 
         $yearDay = ($month * 28) - 28;
-        $yearDay = $yearDay + $day;
+        $yearDay += $day;
 
         /** leap year */
         if (date('L', mktime(0, 0, 0, 1, 1, $year))) {
             $yearDay++;
 
             /** Sinchronian day */
-            if ($month == 0 && $day == 2) {
+            if ($month === 0 && $day === 2) {
                 return $year . '-1-2';
             }
         }
 
         /** Achronian day */
-        if ($month == 0 && $day == 1) {
+        if ($month === 0 && $day === 1) {
             return $year . '-1-1';
         }
 
         $mktime = mktime(0, 0, 0, 1, 1, $year);
-        return date('Y-m-d', strtotime("+$yearDay day", $mktime));
+        return date('Y-m-d', strtotime("+${yearDay} day", $mktime));
     }
 
     /**
@@ -109,8 +81,8 @@ class Dekatrian
      */
     public static function gregToDeka(int $year, int $month, int $day): string
     {
-        if (!checkdate($month, $day, $year)) {
-            throw new BadMethodCallException('The provider arguments are not a valid Gregorian date');
+        if (! checkdate($month, $day, $year)) {
+            throw new BadMethodCallException('Not a valid Gregorian date');
         }
 
         $yearDay = date('z', mktime(0, 0, 0, $month, $day, $year));
@@ -120,13 +92,13 @@ class Dekatrian
             $yearDay--;
 
             /** Sinchronian day */
-            if ($month == 1 && $day == 2) {
+            if ($month === 1 && $day === 2) {
                 return $year . '-0-2';
             }
         }
 
         /** Achronian day */
-        if ($month == 1 && $day == 1) {
+        if ($month === 1 && $day === 1) {
             return $year . '-0-1';
         }
 
@@ -134,11 +106,41 @@ class Dekatrian
         $day = $yearDay - ($month * 28);
         $month++;
 
-        if (!$day) {
+        if (! $day) {
             $day = 28;
             $month--;
         }
 
         return $year . '-' . $month . '-' . $day;
+    }
+    /**
+     * Check if a Dekatrian date is valid or not
+     *
+     * @param int $year  Dekatrian year
+     * @param int $month Dekatrian month
+     * @param int $day   Dekatrian day
+     *
+     * @return bool Dekatrian date is valid or not
+     */
+    private static function checkDekatrian(
+        int $year,
+        int $month,
+        int $day
+    ): bool {
+        if (date('L', mktime(0, 0, 0, 1, 1, $year))) {
+            if ($month === 0 && $day > 2) {
+                return false;
+            }
+        } else {
+            if ($month === 0 && $day > 1) {
+                return false;
+            }
+        }
+
+        if ($month > 13 || $day > 28) {
+            return false;
+        }
+
+        return true;
     }
 }

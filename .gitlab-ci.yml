@@ -17,4 +17,6 @@ test:
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
+    - php composer.phar fix-code
+    - php composer.phar check-code
     - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
