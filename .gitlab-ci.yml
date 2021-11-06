@@ -24,3 +24,9 @@ test:
     - php composer.phar fix-code
     - php composer.phar check-code
     - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
+
+stages:
+- test
+
+sast:
+  stage: test
