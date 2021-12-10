@@ -29,8 +29,8 @@
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6",
-        "phpunit/phpunit": "^9.5",
-        "nunomaduro/phpinsights": "^2.0"
+        "pheromone/phpcs-security-audit": "^2.0",
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
@@ -48,8 +48,7 @@
         "doc": "phpdoc --visibility=public -d src/ -t doc/phpdoc/",
         "fix-style": "phpcbf -p --standard=PSR12 src/ test/",
         "check-style": "phpcs -p --standard=PSR12 src/ test/",
-        "fix-code" : "phpinsights -n --fix",
-        "check-code" : "phpinsights -n",
+        "security" : "phpcs -p --standard=Security src/ test/",
         "test": "phpunit"
     }
 }
