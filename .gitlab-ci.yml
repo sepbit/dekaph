@@ -1,3 +1,7 @@
+stages:
+  - test
+  - deploy
+
 include:
   - template: Security/SAST.gitlab-ci.yml
   - template: Security/Dependency-Scanning.gitlab-ci.yml
@@ -20,6 +24,7 @@ cache:
     - php composer.phar --version
 
 test:
+  stage: test
   extends: .php
   script:
     - php composer.phar fix-style
@@ -28,6 +33,7 @@ test:
     - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
 
 deploy:
+  stage: deploy
   extends: .php
   only:
     refs:
