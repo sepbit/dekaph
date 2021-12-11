@@ -6,7 +6,7 @@ cache:
   paths:
     - vendor/
 
-install:
+test:
   image: php:latest
   before_script:
     - apt-get update -yqq
@@ -14,11 +14,10 @@ install:
     - docker-php-ext-install curl zip
     - pecl install xdebug
     - docker-php-ext-enable xdebug
-  script:
+    - php --version
     - curl -sS https://getcomposer.org/installer | php
     - php composer.phar install
-
-test:
+    - php composer.phar --version
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
