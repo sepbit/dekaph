@@ -6,8 +6,8 @@ include:
   - template: Security/SAST.gitlab-ci.yml
   - template: Security/Dependency-Scanning.gitlab-ci.yml
   
-prepare:
-  stage: .pre
+.prepare:
+  stage: .prepare
   image: php:latest
   cache:
     paths:
@@ -26,6 +26,7 @@ prepare:
 
 test:
   stage: test
+  extends: .prepare
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
@@ -34,6 +35,7 @@ test:
 
 deploy:
   stage: deploy
+  extends: .prepare
   only:
     refs:
       - master
