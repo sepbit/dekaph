@@ -19,7 +19,6 @@ include:
     - pecl install xdebug
     - docker-php-ext-enable xdebug
     - php --version
-  script:
     - curl -sS https://getcomposer.org/installer | php
     - php composer.phar install
     - php composer.phar --version
