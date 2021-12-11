@@ -6,12 +6,8 @@ cache:
   paths:
     - vendor/
 
-test:
+.php:
   image: php:latest
-  variables:
-    BOM_SERVER: "$BOM_SERVER"
-    BOM_KEY: "$BOM_KEY"
-    BOM_PROJECT: "$BOM_PROJECT"
   before_script:
     - apt-get update -yqq
     - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
@@ -22,11 +18,24 @@ test:
     - curl -sS https://getcomposer.org/installer | php
     - php composer.phar install
     - php composer.phar --version
+
+test:
+  extends: .php
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
     - php composer.phar security
     - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
+
+deploy:
+  extends: .php
+  only:
+    refs:
+      - master
+  variables:
+    BOM_SERVER: "$BOM_SERVER"
+    BOM_KEY: "$BOM_KEY"
+    BOM_PROJECT: "$BOM_PROJECT"
   after_script:
-    - php composer.phar make-bom
+    - php composer.phar make-bom --exclude-dev
     - curl -X "POST" "$BOM_SERVER" -H "Content-Type:multipart/form-data" -H "X-Api-Key:$BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
