@@ -8,6 +8,10 @@ cache:
 
 test:
   image: php:latest
+  variables:
+    BOM_SERVER: "$BOM_SERVER"
+    BOM_KEY: "$BOM_KEY"
+    BOM_PROJECT: "$BOM_PROJECT"
   before_script:
     - apt-get update -yqq
     - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
