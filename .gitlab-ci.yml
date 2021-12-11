@@ -1,10 +1,27 @@
-include:
-  - template: Security/SAST.gitlab-ci.yml
-  - template: Security/Dependency-Scanning.gitlab-ci.yml
+image: php:latest
+
+sast:
+  image: docker:latest
+  include:
+    - template: Security/SAST.gitlab-ci.yml
+    - template: Security/Dependency-Scanning.gitlab-ci.yml
+
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - apt-get update -yqq
+  - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
+  - docker-php-ext-install curl zip
+  - pecl install xdebug
+  - docker-php-ext-enable xdebug
+  - curl -sS https://getcomposer.org/installer | php
+  - php composer.phar install
 
 test:
   script:
-    - echo "list"
-    - ls
-    - echo "composer"
-    - cat composer.lock
+    - php composer.phar fix-style
+    - php composer.phar check-style
+    - php composer.phar security
+    - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
