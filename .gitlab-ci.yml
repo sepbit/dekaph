@@ -1,11 +1,5 @@
 image: php:latest
 
-sast:
-  image: docker:latest
-  include:
-    - template: Security/SAST.gitlab-ci.yml
-    - template: Security/Dependency-Scanning.gitlab-ci.yml
-
 cache:
   paths:
     - vendor/
@@ -25,3 +19,9 @@ test:
     - php composer.phar check-style
     - php composer.phar security
     - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
+
+sast:
+  image: docker:latest
+  include:
+    - template: Security/SAST.gitlab-ci.yml
+    - template: Security/Dependency-Scanning.gitlab-ci.yml
