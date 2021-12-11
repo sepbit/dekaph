@@ -17,15 +17,6 @@ before_script:
   - curl -sS https://getcomposer.org/installer | php
   - php composer.phar install
 
-sast:
-  artifacts:
-    name: sast
-    paths:
-      - gl-sast-report.json
-    reports:
-      sast: gl-sast-report.json
-    when: always
-
 test:
   script:
     - php composer.phar fix-style
