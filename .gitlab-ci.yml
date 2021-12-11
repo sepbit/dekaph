@@ -1,5 +1,4 @@
 stages:
-  - build
   - test
   - deploy
 
@@ -7,8 +6,8 @@ include:
   - template: Security/SAST.gitlab-ci.yml
   - template: Security/Dependency-Scanning.gitlab-ci.yml
   
-build:
-  stage: build
+prepare:
+  stage: .pre
   image: php:latest
   cache:
     paths:
