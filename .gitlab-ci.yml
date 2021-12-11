@@ -13,13 +13,14 @@ build:
   cache:
     paths:
       - vendor/
-  script:
+  before_script:
     - apt-get update -yqq
     - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
     - docker-php-ext-install curl zip
     - pecl install xdebug
     - docker-php-ext-enable xdebug
     - php --version
+  script:
     - curl -sS https://getcomposer.org/installer | php
     - php composer.phar install
     - php composer.phar --version
@@ -41,6 +42,6 @@ deploy:
     BOM_SERVER: "$BOM_SERVER"
     BOM_KEY: "$BOM_KEY"
     BOM_PROJECT: "$BOM_PROJECT"
-    script:
-      - php composer.phar make-bom --exclude-dev
-      - curl -X "POST" "$BOM_SERVER" -H "Content-Type:multipart/form-data" -H "X-Api-Key:$BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
+  script:
+    - php composer.phar make-bom --exclude-dev
+    - curl -X "POST" "$BOM_SERVER" -H "Content-Type:multipart/form-data" -H "X-Api-Key:$BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
