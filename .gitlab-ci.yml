@@ -1,23 +1,23 @@
-image: php:latest
-
 include:
   - template: Security/SAST.gitlab-ci.yml
   - template: Security/Dependency-Scanning.gitlab-ci.yml
-
+  
 cache:
   paths:
     - vendor/
 
-before_script:
-  - apt-get update -yqq
-  - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
-  - docker-php-ext-install curl zip
-  - pecl install xdebug
-  - docker-php-ext-enable xdebug
-  - curl -sS https://getcomposer.org/installer | php
-  - php composer.phar install
-
 test:
+  image: php:latest
+  before_script:
+    - apt-get update -yqq
+    - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
+    - docker-php-ext-install curl zip
+    - pecl install xdebug
+    - docker-php-ext-enable xdebug
+    - php --version
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar install
+    - php composer.phar --version
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
