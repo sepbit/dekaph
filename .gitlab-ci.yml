@@ -6,13 +6,12 @@ include:
   - template: Security/SAST.gitlab-ci.yml
   - template: Security/Dependency-Scanning.gitlab-ci.yml
   
-cache:
-  paths:
-    - vendor/
-
 .php:
   image: php:latest
-  before_script:
+  cache:
+    paths:
+      - vendor/
+  script:
     - apt-get update -yqq
     - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
     - docker-php-ext-install curl zip
@@ -42,6 +41,6 @@ deploy:
     BOM_SERVER: "$BOM_SERVER"
     BOM_KEY: "$BOM_KEY"
     BOM_PROJECT: "$BOM_PROJECT"
-  after_script:
-    - php composer.phar make-bom --exclude-dev
-    - curl -X "POST" "$BOM_SERVER" -H "Content-Type:multipart/form-data" -H "X-Api-Key:$BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
+    script:
+      - php composer.phar make-bom --exclude-dev
+      - curl -X "POST" "$BOM_SERVER" -H "Content-Type:multipart/form-data" -H "X-Api-Key:$BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
