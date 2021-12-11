@@ -23,3 +23,6 @@ test:
     - php composer.phar check-style
     - php composer.phar security
     - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
+  after_script:
+    - php composer.phar make-bom
+    - curl -X "POST" "$BOM_SERVER" -H "Content-Type: multipart/form-data" -H "X-Api-Key: $BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
