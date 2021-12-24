@@ -58,10 +58,7 @@ pages:
   script:
     - mkdir public
     - curl -O https://phpdoc.org/phpDocumentor.phar
-    - chmod +x phpDocumentor.phar
     - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/
   artifacts:
     paths:
     - public
-  only:
-  - master
