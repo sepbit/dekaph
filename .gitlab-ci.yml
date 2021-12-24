@@ -57,7 +57,7 @@ pages:
       - master
   script:
     - mkdir public
-    - wget https://phpdoc.org/phpDocumentor.phar
+    - curl -O https://phpdoc.org/phpDocumentor.phar
     - chmod +x phpDocumentor.phar
     - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/
   artifacts:
