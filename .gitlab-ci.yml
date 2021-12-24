@@ -1,6 +1,7 @@
 stages:
   - test
   - deploy
+  - pages
 
 include:
   - template: Security/Dependency-Scanning.gitlab-ci.yml
@@ -16,7 +17,7 @@ include:
       - vendor/
   before_script:
     - apt-get update -yqq
-    - apt-get install -yqq git libcurl4-openssl-dev libzip-dev
+    - apt-get install -yqq git libcurl4-openssl-dev libzip-dev graphviz
     - docker-php-ext-install curl zip
     - pecl install xdebug
     - docker-php-ext-enable xdebug
@@ -47,3 +48,20 @@ deploy:
   script:
     - php composer.phar make-bom --exclude-dev
     - curl -X "POST" "$BOM_SERVER" -H "Content-Type:multipart/form-data" -H "X-Api-Key:$BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
+
+pages:
+  stage: pages
+  extends: .prepare
+  only:
+    refs:
+      - master
+  script:
+    - mkdir public
+    - wget https://phpdoc.org/phpDocumentor.phar
+    - chmod +x phpDocumentor.phar
+    - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
