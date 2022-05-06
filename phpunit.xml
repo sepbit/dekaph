@@ -1,21 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="vendor/autoload.php" backupGlobals="false" backupStaticAttributes="false" colors="true" verbose="true" convertErrorsToExceptions="true" convertNoticesToExceptions="true" convertWarningsToExceptions="true" processIsolation="false" stopOnFailure="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
-  <coverage>
-    <include>
-      <directory suffix=".php">src/</directory>
-    </include>
-    <report>
-      <clover outputFile="build/logs/clover.xml"/>
-      <html outputDirectory="build/coverage"/>
-      <text outputFile="build/coverage.txt"/>
-    </report>
-  </coverage>
-  <testsuites>
-    <testsuite name="Tests">
-      <directory>test</directory>
-    </testsuite>
-  </testsuites>
-  <logging>
-    <junit outputFile="build/report.junit.xml"/>
-  </logging>
+<phpunit>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>test</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+        <report>
+            <clover outputFile="build/phpunit/clover.xml"/>
+            <cobertura outputFile="build/phpunit/cobertura.xml"/>
+            <crap4j outputFile="build/phpunit/crap4j.xml" threshold="50"/>
+            <html outputDirectory="build/phpunit/html-coverage" lowUpperBound="50" highLowerBound="90"/>
+            <php outputFile="build/phpunit/coverage.php"/>
+            <text outputFile="build/phpunit/coverage.txt" showUncoveredFiles="false" showOnlySummary="true"/>
+            <xml outputDirectory="build/phpunit/xml-coverage"/>
+        </report>
+    </coverage>
+    <logging>
+        <junit outputFile="build/phpunit/junit.xml"/>
+        <teamcity outputFile="build/phpunit/teamcity.txt"/>
+        <testdoxHtml outputFile="build/phpunit/testdox.html"/>
+        <testdoxText outputFile="build/phpunit/testdox.txt"/>
+        <testdoxXml outputFile="build/phpunit/testdox.xml"/>
+        <text outputFile="build/phpunit/logfile.txt"/>
+    </logging>
 </phpunit>

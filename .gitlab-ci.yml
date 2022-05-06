@@ -32,7 +32,8 @@ test:
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
-    - php composer.phar security
+    - php composer.phar phpcs -i
+    #- php composer.phar security
     - php composer.phar test
 
 deploy:
@@ -63,5 +64,6 @@ pages:
     - public
   script:
     - wget https://phpdoc.org/phpDocumentor.phar
-    - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/doc/
+    - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/documentation/
+    - mv build/phpunit/html-coverage public/coverage
     - mv bom.xml public/

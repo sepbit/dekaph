@@ -1,7 +1,6 @@
-bom.xml
-.phpunit.result.cache
-tags
 .git/
-build/
-doc/phpdoc/
+tags
 vendor/
+build/
+.phpunit.result.cache
+bom.xml

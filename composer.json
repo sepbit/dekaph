@@ -31,7 +31,7 @@
         "squizlabs/php_codesniffer": "^3.6",
         "pheromone/phpcs-security-audit": "^2.0",
         "phpunit/phpunit": "^9.5",
-        "cyclonedx/cyclonedx-php-composer": "^3.9"
+        "cyclonedx/cyclonedx-php-composer": "^3.10"
     },
     "autoload": {
         "psr-4": {
@@ -46,7 +46,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "doc": "phpdoc --visibility=public -d src/ -t doc/phpdoc/",
+        "doc": "phpdoc --visibility=public --setting=graphs.enabled=true -d src/ -t build/phpdoc/",
         "fix-style": "phpcbf -p --standard=PSR12 src/ test/",
         "check-style": "phpcs -p --standard=PSR12 src/ test/",
         "security" : "phpcs -p --standard=Security src/ test/",
