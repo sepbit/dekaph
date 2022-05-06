@@ -8,10 +8,10 @@ include:
   - template: Security/Secret-Detection.gitlab-ci.yml
   - template: Security/License-Scanning.gitlab-ci.yml
   - template: Security/SAST.gitlab-ci.yml
-  
+
 .prepare:
   stage: .prepare
-  image: php:latest
+  image: php:7.4
   cache:
     paths:
       - vendor/
@@ -32,15 +32,18 @@ test:
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
-    # - php composer.phar security
-    - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
+    - php composer.phar security
+    - php composer.phar test
 
 deploy:
   stage: deploy
   extends: .prepare
   only:
     refs:
-      - master
+      - main
+  artifacts:
+    paths:
+    - bom.xml
   variables:
     BOM_SERVER: "$BOM_SERVER"
     BOM_KEY: "$BOM_KEY"
@@ -54,10 +57,11 @@ pages:
   extends: .prepare
   only:
     refs:
-      - master
+      - main
   artifacts:
     paths:
     - public
   script:
     - wget https://phpdoc.org/phpDocumentor.phar
-    - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/
+    - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/doc/
+    - mv bom.xml public/

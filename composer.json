@@ -51,5 +51,10 @@
         "check-style": "phpcs -p --standard=PSR12 src/ test/",
         "security" : "phpcs -p --standard=Security src/ test/",
         "test": "phpunit"
+    },
+    "config": {
+        "allow-plugins": {
+            "cyclonedx/cyclonedx-php-composer": true
+        }
     }
 }
