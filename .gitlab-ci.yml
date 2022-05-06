@@ -32,7 +32,7 @@ test:
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
-    - php composer.phar security
+    # - php composer.phar security
     - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
 
 deploy:
@@ -55,9 +55,9 @@ pages:
   only:
     refs:
       - master
-  script:
-    - wget https://phpdoc.org/phpDocumentor.phar
-    - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/
   artifacts:
     paths:
     - public
+  script:
+    - wget https://phpdoc.org/phpDocumentor.phar
+    - php phpDocumentor.phar --visibility=public --setting=graphs.enabled=true -d src/ -t public/
