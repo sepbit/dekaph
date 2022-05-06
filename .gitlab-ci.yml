@@ -29,6 +29,8 @@ include:
 test:
   stage: test
   extends: .prepare
+  variables:
+    XDEBUG_MODE: "coverage"
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
