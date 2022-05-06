@@ -29,6 +29,9 @@ include:
 test:
   stage: test
   extends: .prepare
+  artifacts:
+    paths:
+    - build/
   variables:
     XDEBUG_MODE: "coverage"
   script:
