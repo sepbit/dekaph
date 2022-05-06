@@ -32,7 +32,7 @@ test:
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
-    - php composer.phar phpcs -i
+    - vendor/bin/phpcs -i
     #- php composer.phar security
     - php composer.phar test
 
