@@ -55,7 +55,8 @@
     },
     "config": {
         "allow-plugins": {
-            "cyclonedx/cyclonedx-php-composer": true
+            "cyclonedx/cyclonedx-php-composer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }
