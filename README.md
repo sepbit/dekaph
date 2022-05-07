@@ -33,6 +33,10 @@ Dekatrian::gregToDeka(2018, 12, 31);
 // Return string, 2018-13-28
 ```
 
+## Documentation
+
+[Documentation](https://sepbit.gitlab.io/dekaph/documentation/) generated automatically with [PhpDocumentor](https://www.phpdoc.org/).
+
 ## Contributing
 
 Pull Requests not accepted.
