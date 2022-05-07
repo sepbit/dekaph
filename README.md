@@ -6,6 +6,11 @@ This is a simple library for converting dates between [Dekatrian](https://www.fa
 
 This package is compatible with [PSR-12](https://www.php-fig.org/psr/psr-12), [PSR-4](https://www.php-fig.org/psr/psr-4) and [PHP Insights](https://phpinsights.com).
 
+[Documentation](https://sepbit.gitlab.io/dekaph/documentation/) generated automatically with [PhpDocumentor](https://www.phpdoc.org/).
+
+[Coverage](https://sepbit.gitlab.io/dekaph/coverage/) generated automatically with [PHPUnit](https://phpunit.de/).
+
+
 ## Install
 
 This project uses [PHP](https://php.net) and [Composer](https://getcomposer.org).
@@ -32,10 +37,6 @@ Dekatrian::dekaToGreg(2018, 13, 28);
 Dekatrian::gregToDeka(2018, 12, 31);
 // Return string, 2018-13-28
 ```
-
-## Documentation
-
-[Documentation](https://sepbit.gitlab.io/dekaph/documentation/) generated automatically with [PhpDocumentor](https://www.phpdoc.org/).
 
 ## Contributing
 
