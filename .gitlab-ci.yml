@@ -37,9 +37,10 @@ test:
   script:
     - php composer.phar fix-style
     - php composer.phar check-style
-    - vendor/bin/phpcs -i
     #- php composer.phar security
-    - php composer.phar test
+    - vendor/bin/phpcs -p --extensions=php,inc,lib,module,info --standard=./vendor/pheromone/phpcs-security-audit/example_base_ruleset.xml src/ test/
+    #- php composer.phar test
+    - vendor/bin/phpunit --coverage-text --colors=never
 
 deploy:
   stage: deploy
