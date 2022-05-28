@@ -56,7 +56,7 @@ deploy:
     BOM_PROJECT: "$BOM_PROJECT"
   script:
     - php composer.phar make-bom --exclude-dev
-    # - curl -X "POST" "$BOM_SERVER" -H "Content-Type:multipart/form-data" -H "X-Api-Key:$BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
+    - curl -X "POST" "$BOM_SERVER" -H "Content-Type:multipart/form-data" -H "X-Api-Key:$BOM_KEY" -F "project=$BOM_PROJECT" -F "bom=@bom.xml"
 
 pages:
   stage: pages
