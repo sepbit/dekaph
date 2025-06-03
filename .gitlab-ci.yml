@@ -5,7 +5,7 @@ stages:
 
 .prepare:
   stage: .prepare
-  image: php:7.4
+  image: php:8.4
   cache:
     paths:
       - vendor/
