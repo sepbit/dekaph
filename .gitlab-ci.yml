@@ -3,12 +3,6 @@ stages:
   - deploy
   - pages
 
-include:
-  - template: Security/Dependency-Scanning.gitlab-ci.yml
-  - template: Security/Secret-Detection.gitlab-ci.yml
-  - template: Security/License-Scanning.gitlab-ci.yml
-  - template: Security/SAST.gitlab-ci.yml
-
 .prepare:
   stage: .prepare
   image: php:7.4
